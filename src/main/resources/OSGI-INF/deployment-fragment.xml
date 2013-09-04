@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<fragment version="1">
+    <require>org.nuxeo.ecm.platform.lang</require>
+    <!--
+      Template:   nuxeo.ear/OSGI-INF/templates/faces-config.xml
+      End Result: nuxeo.ear/META-INF/faces-config.xml
+    -->
+    <extension target="faces-config#APPLICATION_LOCALE">
+        <locale-config>
+            <supported-locale>nl</supported-locale>
+        </locale-config>
+    </extension>
+
+    <install>
+        <!-- Unzip the contents of our nuxeo.war into the real nuxeo.war on the server -->
+        <unzip from="${bundle.fileName}" to="/" prefix="web">
+            <include>web/nuxeo.war/**</include>
+        </unzip>
+    </install>
+
+</fragment>

@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 1
+Bundle-Name: lang-nl
+Nuxeo-Component: OSGI-INF/lang-contrib.xml
+Bundle-SymbolicName: com.capgemni.nuxeo.lang-nl
+Bundle-Vendor: Capgemini
+Bundle-Category: stateless,web
